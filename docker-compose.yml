@@ -1,0 +1,32 @@
+services:
+  api:
+    build: .
+    ports:
+      - "9480:8000"
+    environment:
+      DUCKDB_API_REDIS_URL: "redis://redis:6379/0"
+      DUCKDB_API_DB_PATH: ":memory:"
+      DUCKDB_API_MEMORY_LIMIT: "512MB"
+      DUCKDB_API_THREADS: "4"
+    volumes:
+      - ./data:/app/data
+    depends_on:
+      redis:
+        condition: service_healthy
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "9481:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+    restart: unless-stopped
+    volumes:
+      - redis_data:/data
+
+volumes:
+  redis_data:
