@@ -1,0 +1,21 @@
+id,name,department,salary,hire_date,city
+1,Alice Johnson,Engineering,125000,2023-01-15,San Francisco
+2,Bob Smith,Marketing,98000,2022-06-01,New York
+3,Charlie Brown,Engineering,135000,2021-03-20,San Francisco
+4,Diana Prince,Product,142000,2020-11-10,Seattle
+5,Eve Davis,Engineering,118000,2023-07-22,Austin
+6,Frank Miller,Marketing,105000,2022-01-05,New York
+7,Grace Lee,Product,128000,2021-09-14,Seattle
+8,Henry Wilson,Engineering,155000,2019-05-30,San Francisco
+9,Iris Chen,Marketing,92000,2023-04-18,Chicago
+10,Jack Taylor,Engineering,140000,2020-08-25,Austin
+11,Kate Brown,Product,115000,2022-12-01,Seattle
+12,Leo Martinez,Engineering,130000,2021-06-15,San Francisco
+13,Mia Anderson,Marketing,88000,2023-09-10,New York
+14,Noah Garcia,Engineering,145000,2020-02-28,Austin
+15,Olivia White,Product,138000,2021-11-05,Seattle
+16,Paul Thomas,Marketing,102000,2022-04-22,Chicago
+17,Quinn Harris,Engineering,160000,2019-08-14,San Francisco
+18,Ruby Clark,Product,125000,2023-03-09,Seattle
+19,Sam Lewis,Engineering,133000,2021-01-20,Austin
+20,Tina Walker,Marketing,95000,2022-10-15,New York
