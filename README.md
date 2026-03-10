@@ -7,8 +7,10 @@ Lightweight analytics API — send SQL, get JSON. Parquet, CSV, JSON, S3 — any
 ## Quick Start
 
 ```bash
-make setup
+make up
 ```
+
+On Windows, `make up` now tries to auto-start Docker Desktop and waits for the Docker engine before running `docker compose up -d`.
 
 API → `http://localhost:9480` · Swagger UI → `http://localhost:9480/docs`
 
@@ -91,6 +93,7 @@ SELECT * FROM 'data/report.csv' WHERE revenue > 1000
 
 | Command | What |
 |---------|------|
+| `make up` | Start (auto-check Docker readiness) |
 | `make setup` | Build & start |
 | `make down` | Stop |
 | `make logs` | Tail API logs |
